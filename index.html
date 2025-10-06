@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rickroll Video</title>
+    <style>
+        /* Remove default margins and padding and hide overflow */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            background-color: black;
+        }
+        /* Make the video container fill the entire viewport */
+        .video-container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* Make the video itself fill its container */
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Ensures the entire video is visible without cropping */
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <video controls autoplay muted>
+            <source src="https://rick.nerial.uk/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</body>
+</html>
